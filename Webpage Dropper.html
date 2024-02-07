@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Idle Game</title>
+        <link rel="stylesheet" href="design.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <h3 class = "header-text">My Idle Game</h3>
+        </header>
+        
+        <div class="stats-container">
+            <h1>Statistics</h1>
+            <h2>Money: $<span id="currMoney"></span></h2>
+            <h2>Money Per Click: $<span id="moneyPerClick"></span></h2>
+            <h2>Money Per Second: $ <span id="moneyPersecond"></span></h2>
+        </div>
+
+        <div class="main-container">
+            <main>
+            <div style="text-align: center; margin-top: -60px;">
+                <img id="funnel" src="transparentfunnel.png" alt="Dropper"> 
+            </div>
+
+            <div class = "fire-container" style="text-align: center; margin-top: 47vh;">
+                <img id="fire" src="fire.gif" alt="FIRE">
+            </div>
+            </main>
+        </div>
+        
+        <div class="upgrade-container" >
+            <h1>Upgrades</h1>
+            <!-- upgrade 1 -->
+            <div id="clickPower" class = "upgrade-tile" > 
+                <h1>Click Powerup $<span id="clickPowerupCost"></span></h1>
+            </div>
+            <div id = "upgrade1" class = "Hovering">
+                Adds $1 To Each Click <br>
+                Owned: <span id="upgrade1amount"></span>
+            </div>
+            <!-- upgrade 2 -->
+            <div id="autoClicker"class = "upgrade-tile">
+                <h1>AutoClicker $<span id="autoClickCost"></span></h1>
+            </div>
+            <div id = "upgrade2" class = "Hovering">
+                Produces $1 Per Second<br>
+                Owned: <span id="upgrade2amount"></span>
+            </div>
+            <!-- upgrade 3 -->
+            <div id="pressureWasher"class = "upgrade-tile">
+                <h1>Pressure Washer $<span id="pressureWasherCost"></span></h1>
+            </div>
+            <div id = "upgrade3" class = "Hovering">
+                Produces $10 Per Second<br>
+                Owned: <span id="upgrade3amount"></span>
+            </div>
+            <!-- upgrade 4 -->
+            <div id="refinery"class = "upgrade-tile">
+                <h1>Refinery $<span id="refineryCost"></span></h1>
+            </div>
+            <div id = "upgrade4" class = "Hovering">
+                Produces $95 Per Second<br>
+                Owned: <span id="upgrade4amount"></span>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
+    

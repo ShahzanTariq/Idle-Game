@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(8, 15, 17);
+    margin: 0;
+    padding: 0;
+
+  }
+img {
+  -webkit-user-drag: none;
+}
+  html, body {
+    overflow: hidden;
+}
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .header {
+    height: 25px;
+    background-color: #222;
+    color: white;
+    text-align: left;
+}
+
+.header-text {
+    font-size: 20px; /* Adjust the font size */
+    margin: 0; /* Remove default margin */
+    line-height: 20px; /* Set line height to match header height */
+}
+.stats-container{
+    float: left; /* Float the main content to the left */
+    width: 25%; /* Adjust the width of the main content */
+    height: 100vh; /* Set the height to viewport height */
+    background-color: rgb(175, 175, 204);
+}
+  .main-container {
+    float: left; /* Float the main content to the left */
+    width: 50%; /* Adjust the width of the main content */
+    height: 100vh; /* Set the height to viewport height */
+    background-color: rgb(175, 175, 204); /* Set a background color */
+}
+
+.upgrade-container {
+    float: left; /* Float the rectangular section to the left */
+    width: 25%; /* Adjust the width of the rectangular section */
+    height: 100vh; /* Set the height to viewport height */
+    background-color: rgb(175, 175, 204); /* Set a background color */
+}
+
+  .ore {
+    position: absolute;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    background-color: red;
+    cursor: pointer;
+  }
+
+  #funnel {
+    width:75%;
+    height:30vh;
+  }
+
+  #funnel:active{
+    transform: scaleY(0.95); /* Scale down slightly */
+  }
+
+  #fire {
+    position: relative;
+    width:95%;
+    height:30vh;
+    z-index: 2;
+  }
+
+  .upgrade-tile{
+    border-radius: 15px;
+    user-select: none;
+    font-size:1.5vh;
+    width:95%;
+    height:5%;
+    background-color:white;
+    margin:auto;
+  }
+
+  .upgrade-tile:active{
+    transform: scale(0.95); /* Scale down slightly */
+  }
+
+  .upgrade-tile:hover{
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a shadow on hover */
+    transform: scale(1.05)
+}
+
+.Hovering{
+  display:none;
+}
+
+#clickPower:hover +  #upgrade1 {
+  display:block;
+  color: red;
+}
+
+#autoClicker:hover + #upgrade2 {
+  display:block;
+  color: red;
+}
+
+#pressureWasher:hover + #upgrade3 {
+  display:block;
+  color: red;
+}
+
+#refinery:hover + #upgrade4 {
+  display:block;
+  color: red;
+}
